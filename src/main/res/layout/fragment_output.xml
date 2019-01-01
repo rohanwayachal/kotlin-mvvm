@@ -1,0 +1,42 @@
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="homeviewmodel"
+            type="com.ronwayachal.kotlinisp.HomeViewModel" />
+    </data>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="30dp">
+
+            <TextView
+                android:id="@+id/secondstext"
+                android:layout_width="203dp"
+                android:layout_height="82dp"
+                android:text='@{homeviewmodel.time , default="0 s"}'
+                android:textAlignment="center"
+                android:textSize="25sp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+</layout>
+
+
+
+
+
+
+
